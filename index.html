@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+   
+        <nav id="navbar">
+          <header>Python Documentation</header>
+          <ul>
+            <li><a href="#intro" class="nav-link">Introduction </a></li>
+            <li><a href="#rem" class="nav-link">What you should aready know</a></li>
+            <li><a href="#hw" class="nav-link">Hello world</a></li>
+            <li><a href="#var" class="nav-link">Variables</a></li>
+            <li><a href="#dv" class="nav-link">Declaring variables</a></li>
+            <li><a href="#vs" class="nav-link">Variable scope</a></li>
+            <li><a href="#gs" class="nav-link">Global variables</a></li>
+            <li><a href="#cons" class="nav-link">Constants</a></li>
+            <li><a href="#data" class="nav-link">Datatypes</a></li>
+            <li><a href="#loops" class="nav-link">Loops</a></li>
+            <li><a href="#ref" class="nav-link">Reference</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section id="main-section " class="big-container">
+        <div id="intro">
+            <h1>Introduction</h1>
+            <p>Python is a widely used general-purpose, high level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code.
+
+                Python is a programming language that lets you work quickly and integrate systems more efficiently.</p>
+        </div>
+        <div id="rem">
+            <h1>Things u should know before learning Python</h1>
+            <ul>
+                <li>Python is an interpreted language.</li>
+                <li>Python is object-oriented, but not exclusively.</li>
+                <li>Python is not strongly typed (which is a double-edged sword)</li>
+                <li>Whitespace matters in Python.</li>
+                <li>Use virtual environments to prevent dependency conflicts.</li>
+            </ul>
+        </div>
+        <div id="hw">
+            <h1>Hello world</h1>
+            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+            <code>
+                <pre> 
+                //to print hello world
+                print("Hello world")
+                //to greet your friends
+                fname = input("Enter your friend's name")
+                printf("Hello"+fname)
+            </pre>
+            </code>
+            <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+        </div>
+        <div id="var">
+            <h1>Variables</h1>
+            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+
+                A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                
+                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+        </div>
+        <div id="dv">
+            <h1>Declaring variables</h1>
+            <pre>
+                With the keyword var. For example,
+                <code><pre>
+                    var x = 42
+                </pre></code>
+                This syntax can be used to declare both local and global variables.
+
+                By simply assigning it a value. For example,
+                <code><pre>
+                    x = 42
+                </pre> </code>
+            </pre>
+        </div>
+        <div id="vs">
+            <h1>Variable Scope</h1>
+            <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+        </div>
+        <div id="gs">
+            <h1>
+                Global variables
+            </h1>
+            <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+
+                Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+        </div>
+        <div id="cons">
+            <h1>Constants</h1>
+            <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+
+                <code>const PI = 3.14</code>
+                A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+                
+                The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
+        </div >
+        <div id="data">
+            <h1>Datatypes</h1>
+            <p>
+                The latest ECMAScript standard defines seven data types:</p>
+
+<p> data types that are primitives:</p>
+<ul>
+    <li>Boolean. true and false.</li>
+    <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+    <li>undefined. A top-level property whose value is undefined.</li>
+    <li>Number. 42 or 3.14159.</li>
+    <li>String. "Howdy"</li>
+    <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+    <li>and Object</li>
+    
+</ul>
+
+
+<p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.
+            </p>
+        </div>
+        <div id="loops">
+            <h1>Loops</h1>
+           <ul>
+            <li>If else statements</li>
+            <li>do while loops</li>
+            <li>while loops</li>
+            <li>for loops</li>
+            <li>elseif ladder</li>
+           </ul> 
+        </div>
+        <div id="ref">
+            <h1>Reference</h1>
+            All the documentaion is taken from python documentaion.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
